@@ -68,7 +68,7 @@ useTransfrom
   </motion.path>`
 
   - tranistion : 각효과에 animate효과를 따로 주는 경우(path는 5, fill은 딜레이:3 걸리는시간:1)
-    - <motion.path
+    - `<motion.path
     variants={svg}
     initial="start"
     animate="end"
@@ -77,7 +77,7 @@ useTransfrom
      fill: { duration: 1, delay: 3 },
     }}
     d="M224 373.12c">
-</motion.path>
+</motion.path>`
 
 ### 7.11
 AnimatePresence
@@ -116,7 +116,7 @@ Overlay
           </Overlay>
         ) : null}
       </AnimatePresence>`
-    `const Overlay = styled(motion.div)`
+    `const Overlay = styled(motion.div)
       width: 100%;
       height: 100%;
       position: absolute;
