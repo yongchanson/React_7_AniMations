@@ -17,7 +17,7 @@
 
 ### 7.6
   - 자식box의 이동범위를 BiggerBox로 제한하는 경우
-    - `const biggerBoxRef = useRef<HTMLDivElement>(null);
+    - `const biggerBoxRef = useRef<HTMLDivElement>(null)
     <BiggerBox ref={biggerBoxRef}>
     <Box />
     </BiggerBox>`
@@ -28,15 +28,15 @@
 
 ### 7.7
 - MotionValue 
-  애니메이션 내 수치를 찾을때
+  - 애니메이션 내 수치를 찾을때
   - `const x = useMotionValue(0);
   useEffect(() => { x.onChange(() => console.log(x.get())); }, [x]);
   <Box style={{ x }} drag="x" dragSnapToOrigin />`
 
 ### 7.8
--useTransfrom
-  애니메이션 내 수치변환
- `const potato =useTransform(x, [-800, 0 800], [2, 1, 0.1]);`
+useTransfrom
+  - 애니메이션 내 수치변환
+  - `const potato =useTransform(x, [-800, 0 800], [2, 1, 0.1]);`
 
 ### 7.9
 - rotateZ : 회전 애니메이션
@@ -48,7 +48,7 @@
 
 ### 7.10
   - fill : 내부 색, stroke : 가장가리 선, strokeWidth : 선의 굵기
-  - `<motion.path
+    - `<motion.path
     initial={{ fill "rgba(255, 255, 255, 0)" }} 
     animate={{ fill : "rgba(255, 255, 255, 1)", }} //0과1은 opacity
     transition={{ duration : 5}} //걸리는시간
@@ -82,7 +82,7 @@
 ### 7.11
 AnimatePresence
   - ReactJs App에서 사라지는 component를 animate함
-  - 항상 visible 상태여야 한다.??
+  - 항상 visible 상태여야 한다??
   - `      <AnimatePresence>
         {showing ? (
           <Box
@@ -100,12 +100,12 @@ custom
   - exitBeforeEnter : exit가 끝나고 다음 애니가 실행
 
 ### 7.14
-layout이라는 prop : css가 변화하면 자동으로 animation을 줌
-layoutId : 다른 component를 연결 `<Circle layoutId="circle" />`
+- layout이라는 prop : css가 변화하면 자동으로 animation을 줌
+- layoutId : 다른 component를 연결 `<Circle layoutId="circle" />`
 
 ### 7.15
 Overlay
-    - `<AnimatePresence>
+- `<AnimatePresence>
         {clicked ? (
           <Overlay
             initial={{backgroundColor : "rgba(0, 0, 0, 0)" }}
@@ -123,4 +123,4 @@ Overlay
       display: flex;
       justify-content: center;
       align-items: center;
-    `;`
+    `
