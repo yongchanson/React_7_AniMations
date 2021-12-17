@@ -16,17 +16,17 @@ Veriants
 - whileHover, whileTap(클릭), drag, whileDrag, dragConstrai(제약:이동범위)
 
 ### 7.6
-자식box의 이동범위를 BiggerBox로 제한하는 경우
-    ```javascript
+- 자식box의 이동범위를 BiggerBox로 제한하는 경우
+```javascript
     const biggerBoxRef = useRef<HTMLDivElement>(null)
     <BiggerBox ref={biggerBoxRef}>
     <Box />
     </BiggerBox>
-    ```
+```
      
-    - 드래그 후 가운데로 돌아오기
-      dragElastic={0~1} : 탄성없음 / 1의경우 이동범위 박스로 제한
-      dragSnapToOrigin
+  - 드래그 후 가운데로 돌아오기
+    dragElastic={0~1} : 탄성없음 / 1의경우 이동범위 박스로 제한
+    dragSnapToOrigin
 
 ### 7.7
 MotionValue 
@@ -79,7 +79,7 @@ useTransfrom
   ```
 
   - tranistion : 각효과에 animate효과를 따로 주는 경우(path는 5, fill은 딜레이:3, 걸리는시간:1)
-    ```javascript
+  ```javascript
     <motion.path
     variants={svg}
     initial="start"
@@ -90,7 +90,7 @@ useTransfrom
     }}
     d="M224 373.12c">
     </motion.path>
-    ```
+  ```
 
 ### 7.11
 AnimatePresence
