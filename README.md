@@ -105,7 +105,7 @@ custom
 
 ### 7.15
 Overlay
-    - `<AnimatePresence>
+- `<AnimatePresence>
         {clicked ? (
           <Overlay
             initial={{backgroundColor : "rgba(0, 0, 0, 0)" }}
@@ -116,7 +116,7 @@ Overlay
           </Overlay>
         ) : null}
        </AnimatePresence>`
-    - `const Overlay = styled(motion.div)
+- `const Overlay = styled(motion.div)
       width: 100%;
       height: 100%;
       position: absolute;
