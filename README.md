@@ -25,8 +25,8 @@ Veriants
 ```
      
   - 드래그 후 가운데로 돌아오기
-    dragElastic={0~1} : 탄성없음 / 1의경우 이동범위 박스로 제한
-    dragSnapToOrigin
+    - dragElastic={0~1} : 탄성없음 / 1의경우 이동범위 박스로 제한
+    - dragSnapToOrigin
 
 ### 7.7
 MotionValue 
@@ -75,7 +75,7 @@ useTransfrom
     stroke="white"
     strokeWidth="2"
     d="어썸폰트값" >
-  </motion.path>
+    </motion.path>
   ```
 
   - tranistion : 각효과에 animate효과를 따로 주는 경우(path는 5, fill은 딜레이:3, 걸리는시간:1)
