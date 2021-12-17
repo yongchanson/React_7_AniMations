@@ -116,7 +116,8 @@ Overlay
             <Box layoutId="hello" style={{ width: 400, height: 200 }} />
           </Overlay>
         ) : null}
-    </AnimatePresence>```
+    </AnimatePresence>
+```
 ```javascript    
     const Overlay = styled(motion.div)
       width: 100%;
@@ -125,4 +126,4 @@ Overlay
       display: flex;
       justify-content: center;
       align-items: center;
-    ```
+```
