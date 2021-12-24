@@ -69,7 +69,7 @@ useTransfrom
   - pathLength : 우리위치까지의 path길이(선과 함께 점차 나타나는 애니메이션 구현)
   ```javascript
     <motion.path
-    initial={{ fill "rgba(255, 255, 255, 0)", pathLength: 0}} 
+    initial={{ fill : "rgba(255, 255, 255, 0)", pathLength: 0}} 
     animate={{ fill : "rgba(255, 255, 255, 0)", pathLength : 1}}
     transition={{ duration : 5}}
     stroke="white"
